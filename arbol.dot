@@ -1,0 +1,17 @@
+digraph r{
+node [shape=record];
+node2[ label ="<f0> | <f1>2| <f2> "];
+node3[ label ="<f0> | <f1>3| <f2> "];
+node4[ label ="<f0> | <f1>4| <f2> "];
+node5[ label ="<f0> | <f1>5| <f2> "];
+node10[ label ="<f0> | <f1>10| <f2> "];
+node19[ label ="<f0> | <f1>19| <f2> "];
+node20[ label ="<f0> | <f1>20| <f2> "];
+node30[ label ="<f0> | <f1>30| <f2> "];
+node47[ label ="<f0> | <f1>47| <f2> "];
+node63[ label ="<f0> | <f1>63| <f2> "];
+node85[ label ="<f0> | <f1>85| <f2> "];
+node96[ label ="<f0> | <f1>96| <f2> "];
+"node19":f0->"node10":f1;
+"node19":f2->"node20":f1;
+}
