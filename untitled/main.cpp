@@ -64,11 +64,11 @@ if(!subarbolizq.empty()){
     file<<"\"node";
     file<<raiz;
     file<<"\":f0->\"node";
-    file<<subarbolizq[subarbolizq.size()-2];
+    file<<subarbolizq[subarbolizq.size()-1];
     file<<"\":f1;\n";
 
-int anterior=subarbolizq[subarbolizq.size()-2];
-int mayor=subarbolizq[subarbolizq.size()-2];
+int anterior=subarbolizq[subarbolizq.size()-1];
+int mayor=raiz;
 for(int i=arbol.size()-1;i>-1;i--){
 
     for(int j=0;j<subarbolizq.size();j++){
@@ -82,7 +82,7 @@ for(int i=arbol.size()-1;i>-1;i--){
                 anterior=subarbolizq[j];
                  cout<<anterior;
             }else {
-                if(mayor==raiz &&subarbolizq[j]!=subarbolizq[subarbolizq.size()-2]){
+                if(mayor==raiz &&subarbolizq[j]!=subarbolizq[subarbolizq.size()-1]){
                 file<<"\"node";
                 file<<anterior;
                 file<<"\":f2->\"node";
@@ -106,7 +106,7 @@ for(int i=arbol.size()-1;i>-1;i--){
                               cout<<"linea98";
 
                         }else{
-                            if(subarbolizq[j]!=subarbolizq[subarbolizq.size()-2]){
+                            if(subarbolizq[j]!=subarbolizq[subarbolizq.size()-1]){
                             file<<"\"node";
                             file<<subarbolizq[j+1];;
                             file<<"\":f0->\"node";
@@ -119,7 +119,7 @@ for(int i=arbol.size()-1;i>-1;i--){
 
                 }
             else{
-                    if(subarbolizq[j]!=subarbolizq[subarbolizq.size()-2]){
+                    if(subarbolizq[j]!=subarbolizq[subarbolizq.size()-1]){
                 file<<"\"node";
                 file<<mayor;
                 file<<"\":f2->\"node";
