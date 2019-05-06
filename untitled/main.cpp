@@ -143,7 +143,7 @@ file<<"\":f2->\"node";
 file<<subarbolder[0];
 file<<"\":f1;\n";
 int anterior=subarbolder[0];
-bool flag=true;
+
 for(int i=arbol.size()-1;i>-1;i--){
 for(int j=1;j<subarbolder.size();j++){
 
@@ -157,13 +157,13 @@ for(int j=1;j<subarbolder.size();j++){
         anterior=subarbolder[j];
         }else{
             for(int z=0;z<subarbolder.size();z++){
-                if(subarbolder[j]<subarbolder[z]&&flag){
+                if(subarbolder[j]<subarbolder[z]){
                 file<<"\"node";
                 file<<subarbolder[z];
                 file<<"\":f0->\"node";
                 file<<subarbolder[j];
                 file<<"\":f1;\n";
-flag=false;
+z=subarbolder.size()+5;
                 }
             }
         }
